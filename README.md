@@ -24,6 +24,7 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 area.html:
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,9 +47,10 @@ area.html:
 </html>
 view.py:
 from django.shortcuts import render
+```
 
 # Create your views here.
-
+```
 def areacalculation(request):
 
     context = {}
@@ -72,6 +74,7 @@ urlpatterns = [
     path('areaofrectangle/',views.areacalculation,name="areaofrectangle"),
     path('',views.areacalculation,name="areaofrectangleroot"),
 ]
+```
 
 ## OUTPUT:
 

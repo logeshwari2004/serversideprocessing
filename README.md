@@ -45,9 +45,10 @@ area.html:
    </form> 
 </body>
 </html>
+```
+
 view.py:
 from django.shortcuts import render
-```
 
 # Create your views here.
 ```
@@ -65,7 +66,10 @@ def areacalculation(request):
         context[ 'l' ] = l
         context[ 'b' ] = b
     return render(request,'mathapp/area.html',context)
+```
+
 urls.py:
+```
 from django.contrib import admin
 from django.urls import path
 from mathapp import views
@@ -75,6 +79,7 @@ urlpatterns = [
     path('',views.areacalculation,name="areaofrectangleroot"),
 ]
 ```
+
 
 ## OUTPUT:
 

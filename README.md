@@ -48,10 +48,11 @@ area.html:
 ```
 
 view.py:
+```
 from django.shortcuts import render
 
 # Create your views here.
-```
+
 def areacalculation(request):
 
     context = {}
@@ -66,7 +67,8 @@ def areacalculation(request):
         context[ 'l' ] = l
         context[ 'b' ] = b
     return render(request,'mathapp/area.html',context)
-```
+``` 
+
 
 urls.py:
 ```
